@@ -4,5 +4,8 @@
   "github": {
     "silent": true,
     "enabled": false
-  }
+  },
+  "rewrites":  [
+    {"source": "/(.*)", "destination": "/"}
+  ]
 }
