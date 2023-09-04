@@ -55,20 +55,6 @@
     "tailwindcss/classnames-order": "warn",
     "tailwindcss/no-custom-classname": "warn",
     "tailwindcss/no-contradicting-classname": "error",
-    "prettier/prettier": [
-      "warn",
-      {
-        "singleQuote": true,
-        "printWidth": 100,
-        "tabWidth": 2,
-        "semi": false,
-        "bracketSpacing": true,
-        "arrowParens": "always",
-        "endOfLine": "auto",
-        "trailingComma": "none",
-        "useTabs": false
-      }
-    ],
     "@typescript-eslint/no-unused-vars": [
       "warn",
       {

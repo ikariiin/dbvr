@@ -2,33 +2,34 @@ const config = {
   imagemin: {
     gifsicle: {
       optimizationLevel: 7,
-      interlaced: false
+      interlaced: false,
     },
     webp: {
-      quality: 75
+      quality: 75,
     },
     optipng: {
-      optimizationLevel: 7
+      optimizationLevel: 7,
     },
     mozjpeg: {
-      quality: 20
+      quality: 20,
     },
     pngquant: {
       quality: [0.8, 0.9],
-      speed: 4
+      speed: 4,
     },
     svgo: {
       plugins: [
         {
-          name: 'removeViewBox'
+          name: "removeViewBox",
         },
         {
-          name: 'removeStyleElement',
-          active: true
-        }
-      ]
-    }
-  }
-}
+          name: "removeStyleElement",
+          active: true,
+        },
+      ],
+    },
+  },
+  port: 5173,
+};
 
-export default config
+export default config;

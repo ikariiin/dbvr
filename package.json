@@ -1,8 +1,8 @@
 {
-  "name": "vrttv-boilerplate",
+  "name": "dbvr",
   "author": {
-    "name": "Diego Do Santos",
-    "url": "https://github.com/drumpy"
+    "name": "Gourab Nag",
+    "url": "https://github.com/ikariiin"
   },
   "private": true,
   "version": "0.0.0",
@@ -27,7 +27,8 @@
   "dependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-router-dom": "^6.3.0"
+    "react-router-dom": "^6.3.0",
+    "zustand": "^4.4.1"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.18.2",
@@ -35,6 +36,7 @@
     "@babel/preset-typescript": "^7.17.12",
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
+    "@tailwindcss/typography": "^0.5.9",
     "@types/node": "^18.0.3",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
