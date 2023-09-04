@@ -1,6 +1,6 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
-import { AG } from "@/components/auth-guard";
+import { AuthGuard as AG } from "@/components/auth-guard";
 import { Auth } from "@/features/auth";
 import { Login } from "@/features/auth/login";
 import { AuthOptions } from "@/features/auth/options";

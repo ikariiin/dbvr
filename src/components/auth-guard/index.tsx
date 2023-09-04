@@ -1,10 +1,10 @@
-import { ReactNode } from "react";
+import { ReactElement } from "react";
 import { Navigate } from "react-router-dom";
 
 import { useAuthStore } from "@/services/store/auth";
 
 export interface AuthGuardProps {
-  children: ReactNode;
+  children: ReactElement;
 }
 
 export function AuthGuard({ children }: AuthGuardProps) {
@@ -16,5 +16,3 @@ export function AuthGuard({ children }: AuthGuardProps) {
 
   return children;
 }
-
-export const AG = AuthGuard;
