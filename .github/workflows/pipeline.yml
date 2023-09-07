@@ -11,7 +11,6 @@ jobs:
   check_skip:
     name: 🛑 Cancel Previous Redundant Builds
     runs-on: ubuntu-18.04
-    if: "!contains(github.event.head_commit.message, '[skip ci]')"
     steps:
       - name: 🛑 Cancel Previous Redundant Builds
         uses: styfle/cancel-workflow-action@0.9.1
@@ -21,7 +20,6 @@ jobs:
   assign_pr_owner:
     name: 📝 Assign PR to creator
     runs-on: ubuntu-18.04
-    if: "!contains(github.event.head_commit.message, '[skip ci]')"
     steps:
       - name: 📝 Assign PR to creator
         uses: thomaseizinger/assign-pr-creator-action@v1.0.0
@@ -32,7 +30,6 @@ jobs:
   lint:
     name: 💅🏼 Linting
     runs-on: ubuntu-18.04
-    if: "!contains(github.event.head_commit.message, '[skip ci]')"
     steps:
       - uses: actions/checkout@v2
         with:
@@ -40,7 +37,7 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 16
-          cache: 'npm'
+          cache: "npm"
       - name: Install dependencies
         run: npm ci
       - name: 💅🏼 Linting
@@ -56,7 +53,7 @@ jobs:
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          vercel-args: '--prod'
+          vercel-args: "--prod"
           vercel-org-id: ${{ secrets.ORG_ID }}
           vercel-project-id: ${{ secrets.PROJECT_ID }}
           github-comment: false
