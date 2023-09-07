@@ -2,7 +2,6 @@
   "recommendations": [
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
-    "usernamehw.errorlens",
     "redhat.vscode-yaml",
     "bradlc.vscode-tailwindcss",
     "csstools.postcss",

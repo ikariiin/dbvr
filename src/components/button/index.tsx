@@ -33,7 +33,13 @@ export function Button({
 
     switch (viewSize) {
       case "normal":
-        str += "text-sm tracking-tight ";
+        str += "text-sm tracking-tight px-3 py-1 ";
+        break;
+      case "large":
+        str += "text-base tracking-tighter px-5 py-2 ";
+        break;
+      case "small":
+        str += "text-xs tracking-tight px-3 py-1 ";
         break;
     }
 
@@ -47,7 +53,7 @@ export function Button({
   return (
     <button
       {...props}
-      className={`${props.className ?? ""} rounded px-5 py-2 font-medium
+      className={`${props.className ?? ""} rounded font-medium
       outline-none focus:ring-[.175rem] focus:ring-beaver-400
       focus:ring-offset-0 ${themedClassName}`}
       type={props.type as "submit" | "button"}

@@ -5,13 +5,13 @@ import { Button } from "@/components/button";
 import { Input } from "@/components/input";
 import { ApiError } from "@/services/api";
 import { AuthTokenDTO } from "@/services/api/auth";
-import { useAuthStore } from "@/services/store/auth";
+import { useAppStore } from "@/services/store";
 
 export function Login() {
   const [submitted, setSubmitted] = useState(false);
 
   const response = useActionData() as AuthTokenDTO | ApiError | undefined;
-  const setAuthToken = useAuthStore((state) => state.setToken);
+  const setAuthToken = useAppStore((state) => state.setToken);
   const navigate = useNavigate();
 
   const responseHandler = useCallback(() => {

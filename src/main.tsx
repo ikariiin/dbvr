@@ -1,3 +1,4 @@
+import "material-symbols/outlined.css";
 import "./global.css";
 
 import React from "react";
