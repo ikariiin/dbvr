@@ -2,7 +2,7 @@ import { useMemo } from "react";
 
 import { InputProps } from "@/components/input/index";
 
-export function OutlinedInput({ viewSize, label, variant, fullWidth, ...props }: InputProps) {
+export function OutlinedInput({ viewSize, label, fullWidth, ...props }: InputProps) {
   const labelSizeClassName = useMemo(() => {
     switch (viewSize) {
       case "small":
