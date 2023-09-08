@@ -18,7 +18,8 @@
     "lint-staged": "lint-staged — config .lintstagedrc",
     "clean": "rimraf node_modules && npm install --no-audit --no-fund --omit=optional",
     "reset:vite": "rimraf ./.vite-cache ./dist",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test:ci": "echo \"No tests yet\""
   },
   "browserslist": [
     "defaults",
